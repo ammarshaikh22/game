@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+}
+
+.nav {
+    width: 100%;
+    display: flex;
+    height: 40px;
+    background-color: rgb(97, 97, 255);
+}
+.nav h1{
+    font-size: 18px;
+    padding: 10px;
+    font-weight: bolder;
+    font-family: arial;
+}
+
+.gamecontainer {
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 10vw);
+    grid-template-rows: repeat(3, 10vw);
+}
+
+.box {
+    border: 2px solid black;
+    font-size: 8vw;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+.box:hover {
+    background-color: rgb(242, 226, 255);
+}
+
+.gameinfo {
+    padding: 0 0 0 80px;
+}
+
+.imgbox img {
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+
+.br-0 {
+    border-right: 0;
+}
+
+.bl-0 {
+    border-left: 0;
+}
+
+.bt-0 {
+    border-top: 0;
+}
+
+.bb-0 {
+    border-bottom: 0;
+}
+#reset{
+    margin: 5px 10px;
+    padding: 5px 20px;
+    background-color: #afafff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bolder;
+    color: blue ;
+}
+.info{
+    font-size: 20px;
+    font-weight: bolder;
+    color: rgb(243, 0, 243);
+}
+.gameinfo h1{
+    font-size: 30px;
+    font-weight: bolder;
+    color: rgb(0, 0, 202);
+    font-family: Georgia;
+}
+
+
+@media screen and (max-width: 800px) {
+    .gamecontainer{
+        flex-wrap: wrap;
+    }
+    .gameinfo{
+        margin-top: 34px;
+        margin-right: 20px;
+    }
+    .gameinfo h1{
+        font-size: 1.5rem;
+
+    }
+}
