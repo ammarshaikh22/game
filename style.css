@@ -14,7 +14,8 @@
     height: 40px;
     background-color: rgb(97, 97, 255);
 }
-.nav h1{
+
+.nav h1 {
     font-size: 18px;
     padding: 10px;
     font-weight: bolder;
@@ -70,7 +71,8 @@
 .bb-0 {
     border-bottom: 0;
 }
-#reset{
+
+#reset {
     margin: 5px 10px;
     padding: 5px 20px;
     background-color: #afafff;
@@ -79,14 +81,16 @@
     cursor: pointer;
     font-size: 14px;
     font-weight: bolder;
-    color: blue ;
+    color: blue;
 }
-.info{
+
+.info {
     font-size: 20px;
     font-weight: bolder;
     color: rgb(243, 0, 243);
 }
-.gameinfo h1{
+
+.gameinfo h1 {
     font-size: 30px;
     font-weight: bolder;
     color: rgb(0, 0, 202);
@@ -95,15 +99,21 @@
 
 
 @media screen and (max-width: 800px) {
-    .gamecontainer{
+    .gamecontainer {
         flex-wrap: wrap;
     }
-    .gameinfo{
+
+    .gameinfo {
         margin-top: 34px;
         margin-right: 20px;
     }
-    .gameinfo h1{
-        font-size: 1.5rem;
 
+    .gameinfo h1 {
+        font-size: 1.5rem;
+    }
+
+    .container {
+        grid-template-columns: repeat(3, 20vw);
+        grid-template-rows: repeat(3, 20vw);
     }
 }
